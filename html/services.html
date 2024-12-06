@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style_services.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/size_media.css" />
+    <link rel="stylesheet" href="/css/modals.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/resource/main/black-logo.png" type="image/x-icon" />
+    <title>Услуги</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navi-wrapper">
+        <a href="/html/index.html">
+          <div class="logo">
+            <img src="/resource/about/logo.png" alt="Logo" />
+          </div>
+        </a>
+
+        <ul id="navigation">
+          <li>
+            <a href="/html/index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#skip" style="color: grey">Услуги</a>
+          </li>
+          <li>
+            <a href="/html/contact.html">Контакты</a>
+          </li>
+          <li id="helo">
+            <a href="/html/about.html" style="white-space: nowrap">О нас</a>
+          </li>
+        </ul>
+
+        <div class="telephone">
+          <p>+375 (33) 473-73-03</p>
+          <div class="social-media-header">
+            <div class="viber">
+              <a href=""
+                ><i
+                  class="fa-brands fa-viber"
+                  aria-hidden="true"
+                  id="vb-icon"
+                ></i
+              ></a>
+            </div>
+            <div class="tg">
+              <a href=""
+                ><i class="fa fa-telegram" aria-hidden="true" id="tg-icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="header-time">
+          <button id="signIn">Войти</button>
+          <button id="accountButton" style="display: none">
+            Личный кабинет
+          </button>
+          <!-- Кнопка Личный кабинет -->
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="zone-choice">
+        <p id="choice-text">Выберите игровой модуль</p>
+        <div class="checkbox-container">
+          <p>Показать только ПК-зоны</p>
+          <input type="checkbox" id="show-pc-zone" />
+        </div>
+        <select id="choice">
+          <option value="gamezone">Game Zone</option>
+          <option value="vipzone">VIP Zone</option>
+          <option value="pszone">PS5 Zone</option>
+        </select>
+      </div>
+
+      <div class="content-container" id="content-container">
+        <div>
+          <p class="zone-name">GAME ZONE</p>
+        </div>
+        <div class="zone-info">
+          <p id="text-info">
+            Game Zone - большой модуль в киберарене с мощным железом. Модуль
+            рассчитан на 30 игровых мест с топовым игровыми компьютерами,
+            креслами и аксессуарами для профессиональных геймеров. Хорошо
+            подойдёт как для индивидуальных, так и командных игр. В нем, как и в
+            других модулях, разрешается не только кушать еду, заказанную в
+            клубе, но и приносить свою. В помещении никогда не бывает жарко или
+            холодно, работают несколько кондиционеров, хорошая вентиляция.
+            Администраторы всегда рядом, и если возникают трудности или
+            неисправности в оборудовании, они всегда готовы помочь и подсказать.
+          </p>
+
+          <div class="tooltip">
+            <img src="/resource/servicess/gamezone.jpg" alt="Game Zone photo" />
+            <span class="tooltiptext"
+              >GAME ZONE <br />Что-то одновременно простое и крутое!</span
+            >
+          </div>
+        </div>
+
+        <div class="zone-devices" id="zone-devices">
+          <div>
+            <p class="devices-title">ОБОРУДОВАНИЕ</p>
+          </div>
+          <div class="devices">
+            <div class="device">
+              <div class="image-block">
+                <img src="/resource/servicess/monitor.png" alt="Monitor" />
+              </div>
+              <div class="device-text">
+                <p class="device-name">Монитор</p>
+                <p class="device-type">BenQ 24.5 240hz</p>
+              </div>
+            </div>
+
+            <div class="device">
+              <div class="image-block">
+                <img src="/resource/servicess/videocart.png" alt="Videocart" />
+              </div>
+              <div class="device-text">
+                <p class="device-name">Видеокарта</p>
+                <p class="device-type">GeForce RTX 3080</p>
+              </div>
+            </div>
+
+            <div class="device">
+              <div class="image-block">
+                <img src="/resource/servicess/headphones.png" alt="Videocart" />
+              </div>
+              <div class="device-text">
+                <p class="device-name">Наушники</p>
+                <p class="device-type">HyperX Cloud Alpha</p>
+              </div>
+            </div>
+
+            <div class="device">
+              <div class="image-block">
+                <img src="/resource/servicess/mouse.png" alt="Videocart" />
+              </div>
+              <div class="device-text">
+                <p class="device-name">Мышь</p>
+                <p class="device-type">HyperX Pulsefire Surge</p>
+              </div>
+            </div>
+
+            <div class="device">
+              <div class="image-block">
+                <img src="/resource/servicess/cpu.png" alt="Videocart" />
+              </div>
+              <div class="device-text">
+                <p class="device-name">Процессор</p>
+                <p class="device-type">Intel i7-11700K</p>
+              </div>
+            </div>
+
+            <div class="device">
+              <div class="image-block">
+                <img src="/resource/servicess/ram.png" alt="Videocart" />
+              </div>
+              <div class="device-text">
+                <p class="device-name">Оп.память</p>
+                <p class="device-type">16Gb DDR4</p>
+              </div>
+            </div>
+
+            <div class="device">
+              <div class="image-block">
+                <img src="/resource/servicess/keyboard.png" alt="Videocart" />
+              </div>
+              <div class="device-text">
+                <p class="device-name">Клавиатура</p>
+                <p class="device-type">HyperX Alloy Origins Core</p>
+              </div>
+            </div>
+
+            <div class="device">
+              <div class="image-block">
+                <img src="/resource/servicess/chair.png" alt="Videocart" />
+              </div>
+              <div class="device-text">
+                <p class="device-name">Кресло</p>
+                <p class="device-type">DXRacer OH/IS11/NR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prices">
+          <div>
+            <p class="prices-title">ЦЕНЫ</p>
+          </div>
+
+          <div class="sort-container">
+            <p id="sort-text">Отсортировать тарифы по</p>
+            <select id="sort-type">
+              <option value="default">Обычное расположение</option>
+              <option value="priceAsc">Возрастанию цены</option>
+              <option value="priceDesc">Убыванию цены</option>
+              <option value="timeAsc">Возрастанию времени</option>
+              <option value="timeDesc">Убыванию времени</option>
+            </select>
+          </div>
+
+          <div class="price-boxes" id="prices-container">
+            <div class="box">
+              <div class="box1">
+                <p class="time">08:00-17:00 (час игры)</p>
+              </div>
+              <div class="box2">
+                <p class="price">3 руб</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p class="time">17:00-22:00 (час игры)</p>
+              </div>
+              <div class="box2">
+                <p class="price">4 руб</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p class="time">Пакет “Утро” <br />09:00-14:00</p>
+              </div>
+              <div class="box2">
+                <p class="price">14 руб</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p class="time">Ночной пакет <br />22:00-08:00</p>
+              </div>
+              <div class="box2">
+                <p class="price">20 руб</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p class="time">Пакет 5 часов <br />в период 08:00-22:00</p>
+              </div>
+              <div class="box2">
+                <p class="price">16 руб</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="box1">
+                <p class="time">Пакет “День” <br />08:00:18:00</p>
+              </div>
+              <div class="box2">
+                <p class="price">22 руб</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="book-btn">
+          <button
+            id="booking-button"
+            onclick="location.href='/html/booking.html'"
+          >
+            Забронировать место
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="info">
+          <div class="number-footer">
+            <p id="number-text">Контактный информация</p>
+            <p id="phone">+375 (33) 473-73-03</p>
+            <p>goodgames@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-center-text">
+          <p>GOOD GAMES</p>
+          <p>2024</p>
+          <p>Все права защищены</p>
+        </div>
+        <div class="social-media-footer">
+          <div class="footer-social-text">
+            <p>Мы в социальных сетях</p>
+          </div>
+          <div class="images">
+            <a href="#skip"
+              ><img src="/resource/about/insta icon.png" alt="Instagram icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/youtube icon.png"
+                alt="Youtube icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/vk icon.png"
+                alt="Vk icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/facebokk icon.png"
+                alt="Facebook icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Вход</h2>
+        <form id="login-form">
+          <label for="phone1">Номер телефона</label>
+          <input
+            type="text"
+            id="phone1"
+            name="phone1"
+            placeholder="+375 (XX) XXX-XX-XX"
+            required
+          />
+
+          <label for="password" id="password-label">Пароль</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Введите пароль"
+            required
+          />
+          <br />
+
+          <button type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div id="success-message" class="success-message" style="display: none">
+      Вы успешно вошли!
+    </div>
+
+    <div id="profile-modal" class="profile-modal">
+      <div class="profile-modal-content">
+        <span class="profile-close">&times;</span>
+        <h2>Личный кабинет</h2>
+        <div id="user-info" class="user-info">
+          <div class="user-card">
+            <h3 class="user-name">Имя пользователя</h3>
+            <p class="user-detail">
+              <strong>Телефон:</strong> +375 (XX) XXX-XX-XX
+            </p>
+            <p class="user-detail"><strong>Email:</strong> user@example.com</p>
+          </div>
+        </div>
+
+        <h3 id="bookings-title">Ваши заявки:</h3>
+        <div id="user-bookings"></div>
+        <!-- Контейнер для заявок пользователя -->
+
+        <button id="logoutButton">Выйти из аккаунта</button>
+      </div>
+    </div>
+
+    <script src="/js/services_sort.js"></script>
+    <script src="/js/service_script.js"></script>
+    <script src="/js/screen_size_script.js"></script>
+    <script src="/js/main_script_server.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6e41ea32de.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

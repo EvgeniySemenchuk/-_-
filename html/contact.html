@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style_contact.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/modals.css" />
+    <link rel="stylesheet" href="/css/size_media.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/resource/main/black-logo.png" type="image/x-icon" />
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=myMap&lang=ru_RU"></script>
+    <title>Контакты</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navi-wrapper">
+        <a href="/html/index.html">
+          <div class="logo">
+            <img src="/resource/about/logo.png" alt="Logo" />
+          </div>
+        </a>
+
+        <ul id="navigation">
+          <li>
+            <a href="/html/index.html">Главная</a>
+          </li>
+          <li>
+            <a href="/html/services.html">Услуги</a>
+          </li>
+          <li>
+            <a href="#skip" style="color: grey">Контакты</a>
+          </li>
+          <li id="helo">
+            <a href="/html/about.html" style="white-space: nowrap">О нас</a>
+          </li>
+        </ul>
+
+        <div class="telephone">
+          <p>+375 (33) 473-73-03</p>
+          <div class="social-media-header">
+            <div class="viber">
+              <a href=""
+                ><i
+                  class="fa-brands fa-viber"
+                  aria-hidden="true"
+                  id="vb-icon"
+                ></i
+              ></a>
+            </div>
+            <div class="tg">
+              <a href=""
+                ><i class="fa fa-telegram" aria-hidden="true" id="tg-icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="header-time">
+          <button id="signIn">Войти</button>
+          <button id="accountButton" style="display: none">
+            Личный кабинет
+          </button>
+          <!-- Кнопка Личный кабинет -->
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="main-wrapper">
+        <div id="map"></div>
+
+        <div class="contacts">
+          <p class="title">Время работы</p>
+          <p class="info-text not-last">Круглосуточно</p>
+
+          <p class="title">Телефон для бронирования</p>
+          <a href="tel:+78121111111" class="info-text not-last"
+            >+375 (33) 453-73-03</a
+          >
+
+          <p class="title">Телефон для сотрудничества</p>
+          <a href="tel:+78121111111" class="info-text not-last"
+            >+375 (33) 453-62-37</a
+          >
+
+          <p class="title">Электронная почта</p>
+          <a
+            href="mailto:mail@htmlacademy.ru&body=привет"
+            class="info-text not-last"
+            >goodgames@gmail.com</a
+          >
+
+          <p class="title">Месенджеры</p>
+          <p class="info-text">Telegram : @goodgames</p>
+          <p class="info-text">Viber : +375 (33) 453-73-03</p>
+          <p class="info-text">WhatsApp : +375 (33) 453-73-03</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="info">
+          <div class="number-footer">
+            <p id="number-text">Контактная информация</p>
+            <p id="phone">+375 (33) 473-73-03</p>
+            <p>goodgames@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-center-text">
+          <p>GOOD GAMES</p>
+          <p>2024</p>
+          <p>Все права защищены</p>
+        </div>
+        <div class="social-media-footer">
+          <div class="footer-social-text">
+            <p>Мы в социальных сетях</p>
+          </div>
+          <div class="images">
+            <a href="#skip"
+              ><img src="/resource/about/insta icon.png" alt="Instagram icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/youtube icon.png"
+                alt="Youtube icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/vk icon.png"
+                alt="Vk icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/facebokk icon.png"
+                alt="Facebook icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Вход</h2>
+        <form id="login-form">
+          <label for="phone1">Номер телефона</label>
+          <input
+            type="text"
+            id="phone1"
+            name="phone1"
+            placeholder="+375 (XX) XXX-XX-XX"
+            required
+          />
+
+          <label for="password" id="password-label">Пароль</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Введите пароль"
+            required
+          />
+          <br />
+
+          <button type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div id="success-message" class="success-message" style="display: none">
+      Вы успешно вошли!
+    </div>
+
+    <div id="profile-modal" class="profile-modal">
+      <div class="profile-modal-content">
+        <span class="profile-close">&times;</span>
+        <h2>Личный кабинет</h2>
+        <div id="user-info" class="user-info">
+          <div class="user-card">
+            <h3 class="user-name">Имя пользователя</h3>
+            <p class="user-detail">
+              <strong>Телефон:</strong> +375 (XX) XXX-XX-XX
+            </p>
+            <p class="user-detail"><strong>Email:</strong> user@example.com</p>
+          </div>
+        </div>
+
+        <h3 id="bookings-title">Ваши заявки:</h3>
+        <div id="user-bookings"></div>
+        <!-- Контейнер для заявок пользователя -->
+
+        <button id="logoutButton">Выйти из аккаунта</button>
+      </div>
+    </div>
+
+    <script src="/js/contact_script.js"></script>
+    <script src="/js/screen_size_script.js"></script>
+    <script src="/js/main_script_server.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6e41ea32de.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

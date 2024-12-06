@@ -1,0 +1,269 @@
+body {
+    width: 100%;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .main {
+    background: url('/resource/main/backgr_zatemnen.jpg') no-repeat top center / 100% 300px, #0B0A0A; 
+    width: 100%;
+    height: 100%;
+    padding-bottom: 80px;
+  }
+
+  .header {
+    width: 100%;
+    height: 70px;
+    background-color: #0B0A0A;
+    opacity: 80%;
+    position: fixed;
+    top: 0;
+    font-size: 13px;
+    z-index: 2;
+    align-content: center;
+  }
+
+  .navi-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 13px;
+    margin-right: 37px;
+  }
+
+  .logo > img {
+    width: 70px;
+    height: 30px;
+  }
+
+  .burger-menu img{
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 212px;
+    background: #0B0A0A;
+    bottom: 0;
+    font-size: 13px;
+    color: white;
+    align-content: center;
+  }
+
+  .footer-wrapper {
+    height: 150px;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .images img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-media-footer {
+    display: block;
+    text-align: center;
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+.footer-center-text p {
+    margin: 2px;
+    font-size: 13px;
+}
+
+.footer-center-text {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.main-wrapper {
+  margin-left: 13px;
+  margin-right: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-block {
+  padding-top: 80px;
+  
+}
+
+.welcome-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  margin-top: 3px;
+}
+
+.big {
+  font-size: 18px;
+}
+
+.price-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-right: 10px;
+}
+
+.button-text-block {
+  text-align: end;
+}
+
+#booking-button {
+  color: white;
+  background-color: #E4A80E;
+  font-size: 13px;
+  height: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: bold;
+  border-radius: 20px;
+  border: none;
+  font-family: "Nunito", sans-serif;
+}
+
+.adv-block {
+  margin-top: 50px;
+}
+
+.adv-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, auto); 
+  gap: 30px; 
+  margin-top: 30px;
+  justify-items: center;
+}
+
+.box {
+  background-color: #E4A80E;
+  width: 251px;
+  height: 157px;
+  border: solid 4px white;
+}
+
+.image-box {
+  border: solid 4px white;
+  width: 30px;
+  height: 30px; 
+  margin-left: 19px;
+  margin-top: 21px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-text {
+  color: white;
+  font-size: 14px;
+  margin-left: 19px;
+  margin-top: 45px;
+}
+
+.slider-container {
+  position: relative;
+  margin-top: 70px;
+}
+
+.slides {
+  display: flex;
+}
+
+.slides img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.prev-slide,
+.next-slide {
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); /* Выравниваем по вертикали */
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+  z-index: 1;
+  background-color: #E4A80E;
+  padding: 10px;
+  width: 5px; /* Задаем фиксированную ширину */
+  height: 5px; /* Задаем фиксированную высоту */
+  border-radius: 50%;
+  display: flex; /* Добавим flexbox */
+  justify-content: center; /* Выравниваем содержимое по горизонтали */
+  align-items: center;
+}
+
+
+
+.prev-slide {
+  left: 5px;
+}
+
+.next-slide {
+  right: 5px;
+}
+
+.dot-container {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: orange;
+  color: white;
+  font-size: 12px;
+  z-index: 1; /* чтобы точки находились над слайдами */
+}
+
+
+.dot.active {
+  background-color: white;
+  color: orange;
+}
+
+@media screen and (width > 600px) {
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 30px; 
+    margin-top: 30px;
+    justify-items: center;
+  }
+
+  .images {
+    display: block;
+    
+  }
+
+  .not-insta {
+    margin-left: 30px;
+  }
+
+}

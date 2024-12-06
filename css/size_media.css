@@ -1,0 +1,25 @@
+@media screen  {
+    .desktop {
+      overflow-x: hidden;
+  }
+  }
+  @media screen {
+    .laptop {
+        zoom: 0.86;
+        transform-origin: top left;
+        height: 100vh; 
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden; 
+    }
+  }
+  @media screen  { 
+    .laptop2 {
+        zoom: 1.22;
+        transform-origin: top left;
+        height: 100vh; 
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden;
+    }
+}

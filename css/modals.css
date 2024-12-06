@@ -1,0 +1,273 @@
+/* Модалка юзера */
+
+.profile-modal {
+    display: none; /* По умолчанию скрыто */
+    position: fixed; /* Фиксированное положение */
+    top: 0;
+    right: 0; /* Позиционирование справа */
+    width: 300px; /* Ширина сайдбара */
+    height: 100%; /* Высота 100% экрана */
+    background-color: rgba(34, 34, 34, 0.9); /* Полупрозрачный темный фон */
+    z-index: 1000; /* Убедитесь, что модальное окно выше других элементов */
+    padding: 20px; /* Отступы внутри сайдбара */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Тень для эффекта выдвижного окна */
+    flex-direction: column; /* Распределение по колонкам */
+  }
+  
+  /* Стили для содержимого модального окна */
+  .profile-modal-content {
+    background-color: transparent; /* Прозрачный фон для содержимого */
+    padding: 0; /* Убираем отступы */
+    flex-grow: 1; /* Занять всё доступное пространство */
+  }
+  
+  /* Стили для кнопки закрытия модального окна */
+  .profile-close {
+    font-size: 24px;
+    color: #fff; /* Белый цвет для кнопки закрытия */
+    cursor: pointer;
+  }
+  
+  /* Заголовок модального окна */
+  .profile-modal-content h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #fff; /* Белый текст для заголовка */
+    text-align: center;
+  }
+  
+  /* Стили для блока информации о пользователе */
+  .user-info {
+    text-align: center; /* Центрируем текст */
+    color: #fff; /* Цвет текста */
+  }
+  
+  /* Стили для карточки пользователя */
+  .user-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
+    border-radius: 10px; /* Скругленные углы */
+    padding: 20px; /* Отступы внутри карточки */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень для эффекта глубины */
+    margin-bottom: 20px; /* Отступ снизу */
+    transition: transform 0.2s; /* Анимация при наведении */
+  }
+  
+  /* Эффект при наведении на карточку */
+  .user-card:hover {
+    transform: translateY(-5px); /* Поднимаем карточку вверх при наведении */
+  }
+  
+  /* Стили для заголовка имени пользователя */
+  .user-name {
+    font-size: 24px; /* Размер шрифта */
+    margin: 0; /* Убираем отступы */
+  }
+  
+  /* Стили для деталей пользователя */
+  .user-detail {
+    font-size: 16px; /* Размер шрифта */
+    margin: 5px 0; /* Отступы сверху и снизу */
+  }
+  
+  /* Стили для кнопки выхода из личного кабинета */
+  #logoutButton {
+    background-color: #E4A80E; /* Желтый фон */
+    color: white; /* Белый текст */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закругленные углы */
+    width: 200px; /* Ширина кнопки */
+    height: 35px; /* Высота кнопки */
+    font-size: 16px; /* Размер шрифта */
+    cursor: pointer; /* Указатель при наведении */
+    z-index: 1000; /* Чтобы кнопка была выше других элементов */
+    white-space: nowrap;
+    margin-left: 52px;
+    margin-top: 200px;
+    border-radius: 15px;
+  }
+  
+  /* Изменения при наведении */
+  #logoutButton:hover {
+    background-color: #9d740e; /* Цвет кнопки при наведении */
+    color: white; /* Цвет текста при наведении */
+  }
+
+  .booking-card {
+    background-color: rgba(255, 255, 255, 0.1); /* Полупрозрачный белый фон */
+    border-radius: 10px; /* Скругленные углы */
+    padding: 20px; /* Отступы внутри карточки */
+    margin-bottom: 20px; /* Отступ снизу */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень для эффекта глубины */
+    transition: transform 0.2s; /* Анимация при наведении */
+  }
+  
+  .booking-card:hover {
+    transform: translateY(-5px); /* Поднимаем карточку вверх при наведении */
+  }
+  
+  .booking-card h4 {
+    font-size: 20px; /* Размер шрифта для заголовка */
+    margin: 0 0 10px; /* Отступы снизу */
+    color: #fff; /* Цвет заголовка */
+  }
+  
+  .booking-card p {
+    font-size: 16px; /* Размер шрифта для текста */
+    color: #fff; /* Цвет текста */
+    margin: 5px 0; /* Отступы сверху и снизу */
+  }
+
+  #bookings-title {
+    font-size: 24px;
+    color: #fff; /* Белый текст для заголовка */
+    text-align: center;
+  }
+
+  /* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #0B0A0A;
+    opacity: 90%;
+    padding: 20px;
+    border-radius: 8px;
+    width: 500px;
+    color: white;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: grey;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.modal-content button {
+    background-color: #E4A80E;
+    color: white;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+}
+
+.modal-content button:hover {
+    background-color: #9d740e;
+}
+
+.modal-content label {
+    display: block; 
+    text-align: left; 
+    font-size: 16px; 
+    color: white;
+    margin-bottom: 5px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#password-label {
+    margin-top: 15px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none; /* Кнопки спрятаны */
+}
+
+.success-message {
+    display: none; /* Изначально скрыто */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: orange; /* Зеленый цвет для успешного сообщения */
+    color: white;
+    padding: 15px 25px;
+    font-size: 16px;
+    z-index: 1001; /* Поверх других элементов */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Модалка букинга */
+.modal-booking {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content-booking {
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.close-booking{
+  color: #aaa;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close-booking:hover,
+.close-booking:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+

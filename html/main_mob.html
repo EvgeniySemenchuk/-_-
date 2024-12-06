@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/css/style_mob_main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/resource/main/black-logo.png" type="image/x-icon" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navi-wrapper">
+        <div class="logo">
+          <img src="/resource/about/logo.png" alt="Logo" />
+        </div>
+
+        <div class="burger-menu">
+          <a href="/html/burger.html"
+            ><img src="/resource/mobile_res/white-burger.png" alt="Burger menu"
+          /></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="main-wrapper">
+        <div class="welcome-block">
+          <div class="picture_block">
+            <p class="welcome-text big">GOOD GAMES</p>
+            <p class="welcome-text">
+              Крупнейшая площадка для игр и <br />киберспортивных мероприятий<br />
+              в Беларуси
+            </p>
+            <p></p>
+          </div>
+
+          <div class="button-text-block">
+            <p class="price-text">3 рубля за <br />час игры</p>
+            <button id="booking-button">Бронировать место</button>
+          </div>
+        </div>
+
+        <div class="adv-block">
+          <p class="adv-text">
+            ПОЧЕМУ ВЫБИРАЮТ<br />
+            GOOD GAMES
+          </p>
+
+          <div class="boxes">
+            <div class="box" id="box1">
+              <div class="image-box">
+                <img
+                  src="/resource/main/comp.png"
+                  alt="Computer icon"
+                  style="height: 26px; width: 26px"
+                />
+              </div>
+              <p class="box-text">
+                Более 80 мощнейших игровых<br />
+                компьютеров. 2080TI, 3060TI
+              </p>
+            </div>
+            <div class="box" id="box2">
+              <div class="image-box">
+                <img
+                  src="/resource/main/network.png"
+                  alt="Computer icon"
+                  style="height: 26px; width: 26px"
+                />
+              </div>
+              <p class="box-text">
+                Один из самых больших клубов<br />
+                в стране - 660 кв. метров
+              </p>
+            </div>
+            <div class="box" id="box3">
+              <div class="image-box">
+                <img
+                  src="/resource/main/trophy.png"
+                  alt="Computer icon"
+                  style="height: 26px; width: 26px"
+                />
+              </div>
+              <p class="box-text">
+                Еженедельные турниры с <br />призовым фондом
+              </p>
+            </div>
+            <div class="box" id="box4">
+              <div class="image-box">
+                <img
+                  src="/resource/main/service.png"
+                  alt="Computer icon"
+                  style="height: 26px; width: 26px"
+                />
+              </div>
+              <p class="box-text">
+                Качественное обслуживание и <br />
+                сервис
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-container">
+          <div class="slides">
+            <img src="/resource/main/slaid1.jpg" alt="Slide photo 1" />
+            <img src="/resource/main/slaid2.jpg" alt="Slide photo 2" />
+            <img src="/resource/main/slaid3.jpg" alt="Slide photo 3" />
+          </div>
+          <div class="prev-slide">&#10094;</div>
+          <div class="next-slide">&#10095;</div>
+          <div class="dot-container">
+            <span class="dot">&#9679;</span>
+            <span class="dot">&#9679;</span>
+            <span class="dot">&#9679;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="social-media-footer">
+          <div class="footer-social-text">
+            <p>Мы в социальных сетях</p>
+          </div>
+          <div class="images">
+            <a href="#skip"
+              ><img src="/resource/about/insta icon.png" alt="Instagram icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/youtube icon.png"
+                alt="Youtube icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/vk icon.png"
+                alt="Vk icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/facebokk icon.png"
+                alt="Facebook icon"
+            /></a>
+          </div>
+        </div>
+
+        <div class="footer-center-text">
+          <p>GOOD GAMES</p>
+          <p>2024</p>
+          <p>Все права защищены</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    var resizeTimer;
+    window.addEventListener("resize", function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        if (window.innerWidth > 900) {
+          window.location.href = "index.html";
+        }
+      }, 5);
+    });
+  </script>
+  <script src="/js/gallery.js"></script>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/burger.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/resource/main/black-logo.png" type="image/x-icon" />
+    <title>Меню</title>
+  </head>
+  <body>
+    <div class="main-burger">
+      <div class="logo">
+        <img src="/resource/about/logo.png" alt="Logo" />
+        <img
+          src="/resource/mobile_res/crest.png"
+          alt="burger"
+          onclick="goBack()"
+          id="crest"
+        />
+      </div>
+
+      <div class="navi-wrapper">
+        <ul class="navi">
+          <a href="#nothing" id="signIn"><li>Вход</li></a>
+          <a href="/html/main_mob.html"><li style="padding-top: 15px">Главная</li></a>
+          <a href=""><li style="padding-top: 15px">Услуги</li></a>
+          <a href=""><li style="padding-top: 15px">Контакты</li></a>
+          <a href="/html/about_mob.html"
+            ><li style="padding-top: 15px">О нас</li></a
+          >
+        </ul>
+      </div>
+
+      <div class="time">
+        <div>
+          <p>Время работы</p>
+        </div>
+        <div class="icon">
+          <p>24/7</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <div class="number-footer">
+          <p id="number-text">Контактная информация</p>
+          <p id="phone">+375 (33) 473-73-03</p>
+          <p>goodgames@gmail.com</p>
+        </div>
+
+        <div class="social">
+          <div class="viber">
+            <a href=""
+              ><i class="fa-brands fa-viber" aria-hidden="true" id="vb-icon"></i
+            ></a>
+          </div>
+          <div class="tg">
+            <a href=""
+              ><i class="fa fa-telegram" aria-hidden="true" id="tg-icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/js/burger_script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6e41ea32de.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

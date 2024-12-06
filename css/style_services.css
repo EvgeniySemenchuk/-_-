@@ -1,0 +1,310 @@
+body {
+    width: 100%;
+    margin: 0;
+    background-color: #0B0A0A;
+    font-family: "Nunito", sans-serif;
+  }
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.zone-choice {
+    margin-top: 120px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#choice-text {
+    font-size: 24px; 
+    font-weight: bold; 
+    color: white;
+    margin: 0;
+}
+
+#choice {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 300px;
+    border-radius: 15px;
+    background-color: yellow;
+    color: #0B0A0A;
+    font-size: 18px;
+    font-weight: bold; 
+    text-align: center;
+    font-family: "Nunito", sans-serif;
+    margin-top: 10px;
+}
+
+  select option {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+  }
+
+  .content-container {
+    margin-top: 65px;
+    align-items: center;
+  }
+
+  .zone-name {
+    text-align: center;
+    font-size: 24px; 
+    font-weight: bold; 
+    color: white;
+  }
+
+  .zone-info {
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 197px;
+    margin-right: 197px;
+  }
+
+  .zone-info > img {
+    margin-top: 6px;
+    width: 600px;
+    height: 355px;
+  }
+
+  #text-info {
+    margin-top: 0px;
+    font-size: 14px;
+    max-inline-size: 360px;
+    text-align: justify;
+    color: white;
+  }
+
+  .zone-devices {
+    margin-top: 100px;
+    align-items: center;
+  }
+
+  .devices-title {
+    text-align: center;
+    font-size: 24px; 
+    font-weight: bold; 
+    color: white;
+  }
+  
+  .devices {
+    padding-top: 25px;
+    padding-left: 140px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; 
+  }
+
+  .devices img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .image-block {
+    width: 50px;
+    height: 50px;
+    border: solid 4px white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.device-text {
+  padding-left: 10px;
+}
+
+.device-name {
+  margin-top: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.device-type {
+  position: relative;
+  font-size: 14px;
+  color: white;
+}
+
+.device {
+  display: flex;
+}
+
+.prices {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prices-title {
+  text-align: center;
+  font-size: 24px; 
+  font-weight: bold; 
+  color: white;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.price-boxes {
+  padding-top: 21px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto); 
+  gap: 60px 150px; 
+  justify-content: space-around;
+}
+
+.box {
+  border: none;
+  border-radius: 20px; 
+  background:  #0B0A0A; /* Градиент от светлого до темного оранжевого */
+  width: 240px; 
+  height: 160px;  
+  overflow: hidden;
+  border: solid 3px yellow;
+}
+
+.box1, .box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  color: white; /* Белый цвет текста для контраста */
+}
+
+.box1 {
+  background: #0B0A0A; /* Полупрозрачный белый фон для верхней части */
+  font-weight: bold;
+  border-bottom: solid 3px yellow;
+}
+
+.time {
+  text-align: center;
+  font-size: 18px; /* Увеличиваем размер текста для времени */
+  letter-spacing: 0.5px;
+}
+
+.price {
+  font-size: 20px; /* Увеличиваем размер текста для цены */
+  font-weight: bold;
+  background: rgba(189, 189, 189, 0.15); /* Полупрозрачный черный фон для выделения цены */
+  padding: 12px 24px; /* Отступы для дополнительного пространства */
+  border-radius: 15px; /* Закругляем углы у цены */
+}
+
+.book-btn {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#booking-button {
+  color: #0B0A0A;
+  background-color: #E3F606;
+  font-size: 18px;
+  font-weight: bold;
+  height: 70px;
+  width: 242px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-family: "Nunito", sans-serif;
+}
+
+#booking-button:hover {
+  background-color: #9fac12;
+}
+
+.tooltip {
+  width: 600px;
+  height: 355px;
+  margin-top: 6px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.tooltip > img {
+  width: 100%;
+  height: 100%;
+}
+
+.tooltip .tooltiptext {
+  font-family: "Nunito", sans-serif;
+  visibility: hidden;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .devices {
+    padding-top: 25px;
+    padding-left: 140px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto); 
+    gap: 20px; 
+  }
+}
+
+.sort-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#sort-text {
+  font-size: 18px; 
+  font-weight: bold; 
+  color: white;
+  margin: 0;
+}
+
+#sort-type {
+  margin-bottom: 10px;
+  width: 300px;
+  border-radius: 15px;
+  background-color: yellow;
+  color: #0B0A0A;
+  font-size: 18px;
+  font-weight: bold; 
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.checkbox-container {
+  font-size: 13px; 
+  font-weight: bold; 
+  color: white;
+  display: flex;
+  margin: 0;
+}
+
+.checkbox-container > p {
+  margin: 0;
+}
+

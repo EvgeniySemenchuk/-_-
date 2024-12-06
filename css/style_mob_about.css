@@ -1,0 +1,161 @@
+  body {
+    width: 100%;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .main {
+    width: 100%;
+    height: 100%;
+    background: url('/resource/about/background_about_zat.jpg') no-repeat top center / 100% 300px, #0B0A0A; 
+  }
+
+  .header {
+    width: 100%;
+    height: 70px;
+    background-color: #0B0A0A;
+    opacity: 80%;
+    position: fixed;
+    top: 0;
+    font-size: 13px;
+    z-index: 2;
+    align-content: center;
+  }
+
+  .navi-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 13px;
+    margin-right: 37px;
+  }
+
+  .logo > img {
+    width: 70px;
+    height: 30px;
+  }
+
+  .burger-menu img{
+    width: 25px;
+    height: 25px;
+  }
+
+  .footer {
+    width: 100%;
+    height: 212px;
+    background: #0B0A0A;
+    bottom: 0;
+    font-size: 13px;
+    color: white;
+    align-content: center;
+  }
+
+  .footer-wrapper {
+    height: 150px;
+    margin-left: 75px;
+    margin-right: 75px;
+  }
+
+  .images img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social-media-footer {
+    display: block;
+    text-align: center;
+  }
+
+  .images {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+.footer-center-text p {
+    margin: 2px;
+    font-size: 13px;
+}
+
+.footer-center-text {
+padding-top: 20px;
+  text-align: center;
+}
+
+.main-title {
+    padding-top: 70px;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #E3F606;
+  }
+
+  .creator p {
+    font-size: 20px;
+    font-size: bold;
+    color: white;
+  }
+
+  .creator img {
+    border: solid 6px #E3F606;
+    border-radius: 100px; 
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+  }
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.partner{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #E3F606;
+    padding-top: 0px;
+    padding-bottom: 60px;
+    padding-left: 110px;
+    padding-right: 110px;
+    align-content: center;
+  }
+  
+  .part-img img {
+    width: 175px;
+    height: 175px;
+  }
+
+  .pad-img {
+    padding-top: 30px;
+  }
+
+  .about {
+    padding-top: 60px;
+  }
+
+  .ideology, .partner {
+    padding-top: 40px;
+  }
+
+  .ideology p, .about p {
+    text-align: justify;
+    font-size: 14px;
+    color: white;
+  }
+
+
+  .ideology h2, .about h2 {
+    color: #E3F606;
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+
+
+
+  

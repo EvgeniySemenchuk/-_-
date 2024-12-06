@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style_booking.css" />
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/footer.css" />
+    <link rel="stylesheet" href="/css/modals.css" />
+    <link rel="stylesheet" href="/css/size_media.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/resource/main/black-logo.png" type="image/x-icon" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "8PK_QqavmNaMuWyAK",
+        });
+      })();
+    </script>
+    <title>Бронирование</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navi-wrapper">
+        <a href="/html/index.html">
+          <div class="logo">
+            <img src="/resource/about/logo.png" alt="Logo" />
+          </div>
+        </a>
+
+        <ul id="navigation">
+          <li>
+            <a href="/html/index.html">Главная</a>
+          </li>
+          <li>
+            <a href="/html/services.html">Услуги</a>
+          </li>
+          <li>
+            <a href="/html/contact.html">Контакты</a>
+          </li>
+          <li id="helo">
+            <a href="/html/about.html" style="white-space: nowrap">О нас</a>
+          </li>
+        </ul>
+
+        <div class="telephone">
+          <p>+375 (33) 473-73-03</p>
+          <div class="social-media-header">
+            <div class="viber">
+              <a href=""
+                ><i
+                  class="fa-brands fa-viber"
+                  aria-hidden="true"
+                  id="vb-icon"
+                ></i
+              ></a>
+            </div>
+            <div class="tg">
+              <a href=""
+                ><i class="fa fa-telegram" aria-hidden="true" id="tg-icon"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="header-time">
+          <button id="signIn">Войти</button>
+          <button id="accountButton" style="display: none">
+            Личный кабинет
+          </button>
+          <!-- Кнопка Личный кабинет -->
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="text">
+        <p class="main-text">
+          Оставить заявку на место<br />
+          в GOOD GAMES
+        </p>
+        <p class="add-text">
+          При брони от 10 человек с вами дополнительно свяжутся<br />
+          для подтверждения в день игры.
+        </p>
+      </div>
+
+      <div class="form">
+        <div class="form-wrapper">
+          <form id="form">
+            <div class="element">
+              <label class="label-text" for="name">Имя</label>
+              <input
+                class="big-input"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+            </div>
+
+            <div class="element">
+              <label class="label-text" for="phone">Номер телефона</label>
+              <input
+                class="big-input"
+                type="number"
+                name="phone"
+                id="phone"
+                required
+              />
+            </div>
+
+            <div class="element">
+              <label class="label-text" for="module">Выберите модуль</label>
+              <select class="big-input" name="module" id="module">
+                <option value="gamezone">Game Zone</option>
+                <option value="vipzone">VIP Zone</option>
+                <option value="pszone">PS5 Zone</option>
+              </select>
+            </div>
+
+            <div class="element">
+              <label class="label-text" for="date">Дата бронирования</label>
+              <input
+                class="big-input"
+                type="date"
+                name="date"
+                id="date"
+                required
+              />
+            </div>
+
+            <div class="element">
+              <label class="label-text" for="start"
+                >Время начала бронирования</label
+              >
+              <input
+                class="big-input"
+                type="time"
+                name="start"
+                id="start"
+                required
+              />
+            </div>
+
+            <div class="element">
+              <label class="label-text" for="end"
+                >Время окончания бронирования</label
+              >
+              <input
+                class="big-input"
+                type="time"
+                name="end"
+                id="end"
+                required
+              />
+            </div>
+
+            <label class="label-text" for="amount" style="margin-bottom: 6px"
+              >Количество мест для бронирования</label
+            >
+            <div class="amount-wrapper">
+              <button type="button" class="amount-btn" id="minus-amount">
+                -
+              </button>
+              <input
+                type="number"
+                name="amount"
+                id="amount"
+                min="1"
+                value="1"
+              />
+              <button type="button" class="amount-btn" id="plus-amount">
+                +
+              </button>
+            </div>
+
+            <p class="form-info-text">
+              Без звонка администратора ваша заявка не<br />
+              считается подтвержденной!
+            </p>
+
+            <div class="check">
+              <input type="checkbox" name="wait" id="wait" required />
+              <p class="label-text">Окей, жду звонка.</p>
+            </div>
+
+            <div class="check">
+              <input type="checkbox" name="accept" id="accept" required />
+              <p class="label-text">
+                Я согласен на обработку персональных данных.
+              </p>
+            </div>
+
+            <button type="submit" id="submit-btn">Оставить заявку</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-wrapper">
+        <div class="info">
+          <div class="number-footer">
+            <p id="number-text">Контактная информация</p>
+            <p id="phone">+375 (33) 473-73-03</p>
+            <p>goodgames@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-center-text">
+          <p>GOOD GAMES</p>
+          <p>2024</p>
+          <p>Все права защищены</p>
+        </div>
+        <div class="social-media-footer">
+          <div class="footer-social-text">
+            <p>Мы в социальных сетях</p>
+          </div>
+          <div class="images">
+            <a href="#skip"
+              ><img src="/resource/about/insta icon.png" alt="Instagram icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/youtube icon.png"
+                alt="Youtube icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/vk icon.png"
+                alt="Vk icon"
+            /></a>
+            <a href="#skip"
+              ><img
+                class="not-insta"
+                src="/resource/about/facebokk icon.png"
+                alt="Facebook icon"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Вход</h2>
+        <form id="login-form">
+          <label for="phone1" style="font-weight: normal;">Номер телефона</label>
+          <input
+            type="text"
+            id="phone1"
+            name="phone1"
+            placeholder="+375 (XX) XXX-XX-XX" style="font-weight: normal;"
+            required
+          />
+
+          <label for="password" id="password-label" style="font-weight: normal;">Пароль</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Введите пароль" style="font-weight: normal;"
+            required
+          />
+          <br />
+
+          <button type="submit">Войти</button>
+        </form>
+      </div>
+    </div>
+    <div id="success-message" class="success-message" style="display: none">
+      Вы успешно вошли!
+    </div>
+
+    <div id="profile-modal" class="profile-modal">
+      <div class="profile-modal-content">
+        <span class="profile-close">&times;</span>
+        <h2>Личный кабинет</h2>
+        <div id="user-info" class="user-info">
+          <div class="user-card">
+            <h3 class="user-name">Имя пользователя</h3>
+            <p class="user-detail">
+              <strong>Телефон:</strong> +375 (XX) XXX-XX-XX
+            </p>
+            <p class="user-detail"><strong>Email:</strong> user@example.com</p>
+          </div>
+        </div>
+
+        <h3 id="bookings-title">Ваши заявки:</h3>
+        <div id="user-bookings"></div>
+        <!-- Контейнер для заявок пользователя -->
+
+        <button id="logoutButton">Выйти из аккаунта</button>
+      </div>
+    </div>
+
+    <script src="/js/booking_script.js"></script>
+    <script src="/js/screen_size_script.js"></script>
+    <script src="/js/main_script_server.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6e41ea32de.js"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
